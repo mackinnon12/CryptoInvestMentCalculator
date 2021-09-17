@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/index.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/js/index.js"></script>
+    <title>Mank's Tools</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Crypto Profit Calculator</h1>
+
+      <div class="numbers">
+        <form action="javascript:getData();">
+          <h3>Current Crypto Price</h3>
+          <input
+            type="number"
+            step="any"
+            placeholder="0.00"
+            name="currentPrice"
+            id="currentPrice"
+            value="currentPrice"
+          />
+          <span id="currentPriceError" class="alert alert-danger">Required</span>
+          <h3>Investment</h3>
+          <input 
+            type="number"
+            step="any"
+            placeholder="0.00"
+            name="userInvestment"
+            id="userInvestment"
+            value="userInvestment" 
+            />
+            <span id="userInvestmentError" class="alert alert-danger">Required</span>
+            <br>
+          <h3>Future Crypto Price</h3>
+          <input 
+            type="number"
+            step="any"
+            placeholder="0.00"
+            name="futurePrice"
+            id="futurePrice"
+            value="futurePrice" 
+            />
+           <span id="futurePriceError" class="alert alert-danger">Required</span>
+          <input type="submit" name="submit" id="submit" value="Submit" />
+          <h4>Your Profit:
+          <h4 id="profitNumbers">$0.00</h4>
+          <h4 id="profitROI">+0.00%</h4>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
